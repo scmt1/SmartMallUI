@@ -1,0 +1,41 @@
+.right-config-container {
+    width: 450px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 50px;
+    right: 0;
+    z-index: 99;
+    padding: 20px;
+    background: #fff;
+    .title {
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        color: #333333;
+        position: relative;
+        margin-left: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 15px;
+            left: -10px;
+            top: 2px;
+            background: rgba(21, 91, 212, 1);
+        }
+        .el-icon-close {
+          color: #8C8C8C;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+    }
+    .title-border {
+        width: 100%;
+        height: 1px;
+        background: #EDEDF2;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,325 @@
+$topHeight: 124px;
+
+.micro-create-pc {
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+  .micro-box-content {
+    height: calc(100vh - 50px);
+  }
+
+  .design-page-content {
+    width: 100vw;
+    display: flex;
+    height: calc(100vh - 50px);
+    // background: #f5f6f9;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+
+    .all-use-components {
+      width: 220px;
+      height: calc(100% - 50px);
+      background: #fff;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      position: fixed;
+
+      &:hover {
+        overflow-y: auto;
+      }
+    }
+
+    .design-container {
+      width: auto;
+      // margin: 20px 70px 0 260px;
+      background: #fff;
+      .slickList-scroll {
+        height: calc(100vh - 50px);
+        scrollbar-width: none;
+        overflow: auto;
+        width: 100%;
+        padding: 0;
+        top: 0;
+      }
+      .slickList-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      .design-editor {
+        width: 100%;
+        height: fit-content;
+        min-height: 100%;
+        margin: 0 auto;
+        z-index: 9999;
+        .title-name {
+          width: 100%;
+          height: 50px;
+          background: #e43130;
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .components-management {
+          background: #fff;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          color: #155bd4;
+          box-sizing: border-box;
+          border: 1px dashed #155bd4;
+          cursor: pointer;
+        }
+
+        .component-items {
+          position: relative;
+          box-sizing: border-box;
+          width: 100%;
+          // height: 100%;
+
+          &.isborderActive {
+            border: 1px solid #155bd4;
+          }
+
+          .preiview-item {
+            .component-hover-style {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-style: dashed;
+              border-width: 0;
+              border-color: transparent;
+              box-sizing: border-box;
+              z-index: 2;
+              border-width: 1px;
+              border-color: #155bd4;
+
+              .drag-box {
+                z-index: 2;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                cursor: all-scroll;
+              }
+
+              .component-close-x {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #155bd4;
+                color: #fff;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                top: -4px;
+                right: -4px;
+                z-index: 99;
+                cursor: pointer;
+                opacity: 0;
+              }
+            }
+          }
+        }
+
+        .header-PopRef {
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #155bd4;
+          text-align: center;
+          line-height: 20px;
+          display: none;
+
+          .component-close-x {
+            color: #fff;
+          }
+        }
+
+        .header-component {
+          box-sizing: border-box;
+          // border: 1px solid #fff;
+
+          &:hover {
+            border: 1px dashed #155bd4;
+
+            .header-PopRef {
+              display: block;
+            }
+          }
+        }
+
+        .isHeader {
+          border: 1px solid #155bd4;
+        }
+
+        .component-items:hover {
+          .preiview-item .component-hover-style {
+            display: block;
+          }
+
+          .preiview-item .component-close-x {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .component-management-container {
+      position: relative;
+
+      .component-list-edit {
+        width: auto;
+        height: 32px;
+        background: #fff;
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+        border-radius: 2px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 420px;
+        top: 100px;
+        cursor: pointer;
+
+        &.active {
+          color: #fff;
+          background: #155bd4;
+        }
+
+        span {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    // 微页面标题配置信息
+    .title-config-message {
+      width: 400px;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 20px;
+
+      .title {
+        color: #333;
+        font-size: 16px;
+        margin-top: 50px;
+        position: relative;
+        margin-left: 10px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 3px;
+          height: 15px;
+          background: rgba(21, 91, 212, 1);
+          left: -10px;
+          top: 2px;
+        }
+      }
+
+      .title-border {
+        width: 100%;
+        height: 1px;
+        background: #EDEDf2;
+        margin: 20px 0;
+      }
+    }
+
+    .right-toolbars {
+      width: 450px;
+      height: 100%;
+      z-index: 99;
+      background: #fff;
+      // position: fixed;
+      // right: 0;
+      // top: 50px;
+    }
+  }
+
+  .save-btns {
+    width: calc(100% - 800px);
+    height: 50px;
+    bottom: 0;
+    left: 360px;
+    background: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.0300);
+
+    .btns1 {
+      display: flex;
+      height: 30px;
+      border-radius: 0;
+      color: #fff;
+      padding: 0 15px;
+      background: #155bd4;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    .returnBtn {
+      width: 60px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 15px;
+      border: 1px solid #dcdfe6;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.design-container::-webkit-scrollbar {
+  width: 0px;
+  height: 7px;
+}
+
+/* 滚动槽 */
+.design-container::-webkit-scrollbar-track {
+  width: 2px;
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  background: #f1f1f1;
+  // border-radius:10px;
+}
+
+/* 滚动条滑块 */
+.design-container::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 10px;
+  // border-radius:10px;
+  background: #c1c1c1;
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.design-container::-webkit-scrollbar-thumb:window-inactive {
+  background: #c1c1c1;
+}
+
+@-webkit-keyframes rtl-drawer-in{0%{-webkit-transform:translate(100%,0);transform:translate(100%,0)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}
+.fade-open {-webkit-animation:rtl-drawer-in .3s 1ms;animation:rtl-drawer-in .3s 1ms}

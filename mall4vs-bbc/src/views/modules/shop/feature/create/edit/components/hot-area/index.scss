@@ -1,0 +1,339 @@
+.micro-image-ad-box {
+  .cursor {
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    outline: none !important;
+    &.color {
+      color: #2c3e50;
+    }
+  }
+  .type-name {
+    display: inline-block;
+    border: 1px solid rgba(51, 136, 255, 0.3);
+    background: #e2f3ff;
+    padding: 1px 4px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .title {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    user-select: none;
+  }
+  .ad-view-box {
+    position: relative;
+    overflow: hidden;
+
+    &.ad-view-2, &.ad-view-3 {
+      white-space: nowrap;
+      display: -webkit-box;
+
+      .image-ad-view {
+        width: 100%;
+      }
+    }
+    &.ad-view-3 {
+      .image-ad-view {
+        width: 40%;
+      }
+    }
+  }
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    display: none;
+  }
+  .image-ad-view {
+    position: relative;
+    height: 135px;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #f3f5f7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #88c4dc;
+    text-align: center;
+
+    .image-ad-title {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #9FA4B1;
+      > img {
+        width: 57px;
+        object-fit: contain;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .ad-po {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background: #7d7e80;
+      display: inline-block;
+      margin: 0 3px;
+
+      &:first-child {
+        background: #679fce;
+      }
+    }
+  }
+  .image-ad-edit {
+    .ad-edit-item-title {
+      font-size: 14px;
+      color: #666666;
+      margin: 20px 0;
+      > span.tips {
+        font-size: 12px;
+        color: #AAAAAA;
+        margin-left: 15px;
+      }
+    }
+    .ad-edit-item-content {
+      flex: 1;
+      .item-box-type {
+        background: #fff;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        margin: 0 10px 10px 0;
+        border: 1px solid #e5e5e5;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        &:hover, &.active {
+          border: 1px solid #679fce;
+        }
+        img {
+          width: 100%;
+        }
+        p {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  .ad-hot-box {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    .box-img {
+      position: relative;
+      height: auto;
+      width: 500px;
+      vertical-align: middle;
+      border: 0;
+    }
+  }
+  .ad-drag {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    user-select: auto;
+    touch-action: none;
+    cursor: move;
+    border: 1px solid #38f;
+    background: rgba(51, 136, 255, .5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      .el-icon-close {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .hot-item-title {
+      max-width: 100%;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+    * {
+      user-select: auto;
+      touch-action: none;
+    }
+    .el-dropdown-link {
+      color: #fff;
+    }
+  }
+  .ad-image-list {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    border: 1px dashed #e5e5e5;
+    margin-top: 10px;
+    align-items: center;
+    &:hover {
+      border: 1px dashed #38f;
+    }
+    > div {
+      &:first-child {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        cursor: all-scroll;
+
+        .re-choose-img {
+          position: absolute;
+          margin: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.52);
+          text-align: center;
+          padding: 2px 0;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+      &:last-child {
+        flex: 1;
+      }
+    }
+    .ad-image-list-img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #ccc;
+    }
+    .ad-image-list-content {
+      position: relative;
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+      .custom-link-input {
+        margin: 10px auto;
+        width: 100%!important;
+      }
+      .close-icon {
+        top: -10px;
+        right: -10px;
+      }
+      &:hover {
+        .close-icon {
+          cursor: pointer;
+          display: block;
+        }
+      }
+      .el-input {
+        width: 200px;
+        margin-left: 10px;
+      }
+      .ad-image-link {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        .el-dropdown-selfdefine {
+          margin-left: 10px;
+          max-width: 200px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .ad-image-hot {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    .ad-image-hot-box {
+      position: relative;
+      &:hover {
+        .close-icon {
+          cursor: pointer;
+          display: block;
+        }
+      }
+    }
+    .add-ad-image {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 6px;
+      border: 1px solid #459ae9;
+      cursor: pointer;
+      color: #459ae9;
+      margin-right: 10px;
+    }
+    img {
+      width: 100%;
+      user-select: none;
+    }
+    .ad-image-hot-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: all-scroll;
+      overflow: hidden;
+      span.ad-hot-box-item {
+        position: absolute;
+        border: 1px solid #38f;
+        background: rgba(51, 136, 255, .5);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+        max-width: 100%;
+        max-height: 100%;
+        &:hover {
+          .el-icon-close {
+            display: block;
+            cursor: pointer;
+          }
+        }
+        .hot-item-title {
+          max-width: 100%;
+          word-break: break-all;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .custom-path-con {
+    margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      white-space: nowrap;
+      margin-right: 10px;
+    }
+  }
+  .el-dialog__title {
+    font-size: 16px;
+  }
+}

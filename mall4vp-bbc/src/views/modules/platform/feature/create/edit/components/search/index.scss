@@ -1,0 +1,32 @@
+/**class 必须有一个父class包起来，避免混淆*/
+.micro-search-bar-box {
+  .design-preview-controller {
+    .search-con {
+      padding: 10px 15px;
+      background-color: #fff;
+    }
+    .micro-search-bar {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #999;
+      background-color: #eee;
+      padding-left: 10px;
+      border-radius: 2px;
+      .tit-text {
+        margin-left: 2px;
+      }
+    }
+  }
+  .design-config-editor {
+    .design-editor-component-title {
+      margin-bottom: 5px;
+    }
+    .el-form-item {
+      margin-bottom: 10px;
+    }
+    .el-slider {
+      width: 80%;
+    }
+  }
+}

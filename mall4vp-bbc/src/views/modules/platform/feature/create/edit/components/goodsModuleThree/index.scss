@@ -1,0 +1,19 @@
+.micro-goodsThree-box {
+    .design-preview-controller {
+        padding: 12px 12px 0 12px;
+    }
+    // 编辑样式
+    .config-item {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+.micro-title-text {
+  position: relative;
+  .title-text-content {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .title-text-title {
+    word-break: break-word;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .title-text-desc {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.375;
+    word-break: break-word;
+    color: #8c8c8c;
+    white-space: initial;
+  }
+
+  .show-more {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    color: #aaa;
+  }
+
+  .el-color-picker {
+    vertical-align: middle;
+  }
+
+  .el-radio {
+    margin-bottom: 10px;
+
+    .el-radio__label {
+      font-size: 12px;
+    }
+  }
+
+  .reColor {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}
+
+.edit-form {
+  padding: 0;
+  .el-radio {
+    margin-bottom: 10px;
+
+    .el-radio__label {
+      font-size: 14px;
+    }
+  }
+}
+
+.view-more-item {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 12px;
+    color: #606266;
+  }
+}
+.el-radio-group {
+  vertical-align: unset;
+}
+
+.btn-style {
+  background-color: #f7f8fa;
+  padding: 20px 16px;
+  margin-top: 20px;
+  transition: all .2s;
+  font-size: 14px;
+  .btn-styles-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-type-input {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .cursor {
+      .type-sign {
+        background-color: #ceefff;
+        border: #02a1e9 1px solid;
+        color: #02a1e9;
+        padding: 2px 4px;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+    }
+
+
+    .item-label {
+      width: 80px;
+      margin-top: 2px;
+    }
+    .goods-name {
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 0 0 10px !important;
+      cursor: pointer;
+    }
+    .goods-name:hover {
+      color: #e43130;
+    }
+    .el-dropdown {
+      cursor: pointer;
+    }
+    .el-input {
+      width: unset;
+    }
+    input {
+      height: 30px;
+    }
+    .mini-programs-path {
+      margin-left: 80px;
+      width: 240px !important;
+    }
+  }
+  .btn-type-input:nth-child(3n) {
+    margin-bottom: 0px;
+  }
+}
+
+.custom-path-con {
+  margin-top: 10px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  span {
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+}
+.el-dialog__title {
+  font-size: 16px;
+}

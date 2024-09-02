@@ -1,0 +1,120 @@
+.micro-goodsTwo-box {
+    .design-preview-controller {
+        padding: 12px 12px 0 12px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    // 编辑样式
+    .config-item {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        .bottom-edit {
+            width: 100%;
+            height: 108px;
+            background: rgba(255, 255, 255, 0.39);
+            border: 1px solid #DCDFE6;
+            border-radius: 2px;
+            display: flex;
+            .edit-item {
+                width: 50%;
+                height: 100%;
+                &:nth-child(1) {
+                    width: 50%;
+                    border-right: 1px solid #DCDFE6;
+                }
+                display: flex;
+                flex-direction: column;
+                .edit-item-son {
+                    height: 50%;
+                    width: 100%;
+                    &:nth-child(1) {
+                        border-bottom: 1px solid #DCDFE6;
+                    }
+                    &.active {
+                        background: rgba(21, 91, 212, 0.04);
+                        border: 1px solid #155BD4;
+                    }
+                }
+                &.active {
+                    background: rgba(21, 91, 212, 0.04);
+                    border: 1px solid #155BD4;
+                }
+            }
+        }
+        &.special-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 20px 0;
+            .title {
+                width: 80px;
+                margin: 0;
+            }
+            .el-slider {
+                width: calc(100% - 90px);
+            }
+        }
+        .add-img-container {
+            width: 100%;
+            height: 90px;
+            border: 1px solid #EAEAF2;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            .add-btn {
+                width: 60px;
+                height: 60px;
+                background: rgba(243, 245, 247, 0.39);
+                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 15px;
+                cursor: pointer;
+                position: relative;
+                .add-items {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                }
+                span {
+                    color: #155BD4;
+                    font-size: 12px;
+                    &:nth-child(1) {
+                        font-size: 24px;
+                    }
+                }
+                .el-icon-error {
+                    position: absolute;
+                    font-size: 18px;
+                    right: -8px;
+                    top: -8px;
+                }
+            }
+            .right-content {
+                width: calc(100% - 90px);
+                display: flex;
+                align-items: center;
+                .right-titles {
+                    width: 45px;
+                }
+                .link-redirect {
+                    width: calc(100% - 60px);
+                    margin-right: 19px;
+                }
+            }
+        }
+    }
+}

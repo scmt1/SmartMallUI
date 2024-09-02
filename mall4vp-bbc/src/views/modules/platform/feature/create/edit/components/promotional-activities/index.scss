@@ -1,0 +1,170 @@
+.micro-promotional-activities-box {
+  position: relative;
+  padding: 5px 5px;
+  .design-editor-component-title {
+    margin-bottom: 10px;
+  }
+  .design-preview-controller {
+    .active-goods-show {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 100%;
+      height: auto;
+      overflow-y: hidden;
+      overflow-x: auto;
+      white-space: nowrap;
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 5px;
+      .activet-tit-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        .activet-tit {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .view-more {
+          color: #aaa;
+        }
+      }
+      .active-goods-box {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        overflow: -moz-scrollbars-none;
+        scrollbar-width: none;
+        .img-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 100px;
+          background-color: #f3f5f7;
+          font-size: 0;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+          &.empty {
+            img {
+              width: 25px;
+            }
+          }
+
+        }
+        .active-price-con {
+          display: flex;
+          flex-direction: column;
+          .active-price {
+            display: inline-block;
+            font-size: 28rpx;
+            color: #e43130;
+            line-height: 1.5em;
+            text-align: center;
+            padding-top: 8rpx;
+            font-family: arial;
+          }
+          .origin-price {
+            text-align: center;
+            font-size: 25rpx;
+            line-height: 1em;
+            color: #999;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    .active-goods-show::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .goods-list {
+    padding-bottom: 5px;
+    margin-top: 20x;
+    .goods-item {
+      position: relative;
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      border: 1px solid #EAEAF2;
+      border-radius: 2px;
+      padding: 12px;
+      box-sizing: border-box;
+      .img-box {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        margin-right: 10px;
+        width: 84px;
+        height: 84px;
+        background-color: #f3f5f7;
+        font-size: 0;
+        position: relative;
+      }
+      .goods-delete-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+      }
+      .goods-pic img {
+        width: 84px;
+        height: 84px;
+        margin-right: 15px;
+      }
+      .goods-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding-right: 20px;
+        .goods-name {
+          max-height: 45px;
+          line-height: 1.5em;
+          width: 100%;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          -webkit-text-overflow: ellipsis;
+          -moz-text-overflow: ellipsis;
+          word-break: break-word;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .ad-edit-item-title {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+    margin-top: 7.5px;
+    > span.tips {
+      font-size: 12px;
+      color: #AAAAAA;
+    }
+  }
+  .imgs_shelves {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 60px;
+    }
+  }
+}

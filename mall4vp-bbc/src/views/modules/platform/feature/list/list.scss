@@ -1,0 +1,19 @@
+.feature-list-container {
+  margin-top: 10px;
+  .content-box {
+    margin: 20px 0;
+    .text-btn-con {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .text-btn {
+        margin-right: 15px;
+      }
+      .update-home-page {
+        word-break: break-all;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+}

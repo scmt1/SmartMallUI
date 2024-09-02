@@ -1,0 +1,91 @@
+.micro-goodsFour-box {
+    .design-preview-controller {
+        padding: 12px 12px 0 12px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .config-item {
+        margin-top: 20px;
+        .title {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #666;
+            font-family: Microsoft YaHei;
+            span {
+                font-size: 12px;
+            }
+        }
+        .bottom-contents {
+            height: 100px;
+            background: rgba(255, 255, 255, 0.39);
+            border: 1px solid #EAEAF2;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            .add-btn {
+                width: 60px;
+                height: 60px;
+                margin: 0 15px;
+                background: rgba(243, 245, 247, 0.39);
+                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                span {
+                    color: #155BD4;
+                    font-size: 12px;
+                    &:nth-child(1) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .right-content {
+                width: calc(100% - 90px);
+                display: flex;
+                align-items: center;
+                .right-titles {
+                    width: 45px;
+                }
+                .link-redirect {
+                    width: calc(100% - 60px);
+                    margin-right: 19px;
+                }
+            }
+        }
+        .add-btn {
+            width: 60px;
+            height: 60px;
+            background: rgba(243, 245, 247, 0.39);
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 15px;
+            cursor: pointer;
+            position: relative;
+            .add-items {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            span {
+                color: #155BD4;
+                font-size: 12px;
+                &:nth-child(1) {
+                    font-size: 24px;
+                }
+            }
+            .el-icon-error {
+                position: absolute;
+                font-size: 18px;
+                right: -8px;
+                top: -8px;
+            }
+        }
+    }
+}

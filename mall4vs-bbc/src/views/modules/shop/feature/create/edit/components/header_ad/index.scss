@@ -1,0 +1,38 @@
+/**class 必须有一个父class包起来，避免混淆*/
+.micro-header-ad-box {
+  .preview-header {
+    height: 64px;
+    width: 320px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url("../../../../../../../../assets/img/micro-page/micro-create-header.png");
+    .preview-header-title {
+      box-sizing: initial;
+      display: inline-block;
+      padding: 27px 60px 0;
+      width: 200px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      color: #222;
+    }
+  }
+  .design-config-editor {
+    .el-checkbox-group {
+      .el-checkbox {
+        display: block;
+      }
+      .el-checkbox + .el-checkbox {
+        margin-left: 0;
+      }
+    }
+    .el-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.micro-goods-box {
+  position: relative;
+
+  .goods-classify {
+
+  }
+  // 预览区
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10.5px 0 10.5px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    .nav-item-item {
+      vertical-align: top;
+      height: 45px;
+      line-height: 45px;
+      color: #666666;
+      padding: 0 5px;
+
+      .text_title {
+        white-space: nowrap;
+      }
+
+      &.active {
+        font-size: 14px;
+        font-weight: bold;
+        color: #222222;
+
+        &:before {
+          position: absolute;
+          content: '';
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          width: 15px;
+          height: 4px;
+          background: rgba(184, 28, 40, 1);
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+
+  .design-config-editor {
+    .design-editor-component-container {
+      padding: 10px 0 !important;
+
+      .tab-nav-set-item {
+        position: relative;
+        background: #fff;
+        padding: 20px 10px;
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+        .set-box {
+          display: flex;
+          align-items: center;
+          .set-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #eaeaf2;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #9FA4B1;
+            cursor: pointer;
+
+            .set-image-add {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              background: rgba(0, 0, 0, 0.55);
+              color: #fff;
+              font-size: 12px;
+            }
+            .set-image-empty {
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+          .set-info {
+            height: 60px;
+            padding-left: 10px;
+            flex: 1;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .el-dropdown {
+              cursor: pointer;
+            }
+            .set-item-title {
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              > span {
+                width: 30px;
+                line-height: 16px;
+                margin-right: 10px;
+              }
+              > .el-input {
+                width: 80%;
+              }
+              .ad-image-link {
+                display: flex;
+                max-width: 220px;
+                .ad-image-link-info {
+                  display: flex;
+                  align-items: center;
+                  .ad-image-link-dropdown {
+                    .type-name {
+                      font-size: 12px;
+                      text-align: center;
+                      color: #155BD4;
+                    }
+                    .el-dropdown-selfdefine {
+                      max-width: 200px;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    }
+                  }
+                }
+                .title {
+                  line-height: 16px;
+                  margin-left: 10px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  cursor: pointer;
+                }
+              }
+            }
+
+          }
+          .set-info.flex-center {
+            justify-content: center;
+          }
+        }
+        .set-close {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          display: none;
+        }
+        .mini-programs-path {
+          margin: 10px auto;
+        }
+        &:hover {
+          .set-close {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
